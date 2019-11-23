@@ -1,0 +1,128 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(-45deg, #7b00f3, #65b0b3);
+    /*background: lightgray;*/
+}
+
+.showcase {
+    width: 80%;
+    left: 10%;
+    height: 100vh;
+    position: relative;
+
+    padding-top: 6vh;
+    text-align: center;
+}
+
+.about {
+    padding-left: 15%;
+    padding-right: 15%;
+    height: 89vh;
+    position: relative;
+
+    padding-top: 10vh;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.welcome {
+    padding-top: 5vh;
+}
+
+.welcome h1, h2, h3 {
+    font-family: "League Spartan", serif;
+    color: white;
+}
+
+.about h3 {
+    color: black;
+    font-size: 24pt;
+    padding-top: 5vh;
+}
+
+.about h4 {
+    color: black;
+    font-size: xx-large;
+    line-height: 2.0;
+    text-align: left;
+    padding-top: 8vh;
+}
+
+.title-line {
+    border: 3px solid black;
+    width: 15%;
+    margin-left: 42.5%;
+}
+
+.logo-spin {
+    animation: rotate 5s infinite linear;
+}
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 15px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.dropdown {
+    text-align: right;
+    position: relative;
+    z-index: 100;
+}
+
+.dropButton {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dropButton:hover, .dropButton:focus {
+    /*background-color: #F1F1F1;*/
+    /*color: black;*/
+    /*border: 2px solid black;*/
+
+    opacity: 0.75;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 110;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
